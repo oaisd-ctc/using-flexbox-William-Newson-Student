@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>FlexBox-ing</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <a href="https://simple.wikipedia.org/wiki/Special:Random">Random wikipedia page</a>
+    </nav>
+    <h1>
+        FlexBox's
+    </h1>
+    <p>
+        to start with working with FlexBox's you need to create a container that uses the display: flex property. in a
+        CSS script
+    </p>
+    <div class="flex-container">
+        <div>
+            <p>
+                .flex-container { <br>
+                &nbsp; &nbsp; display: flex;<br>
+                }
+            </p>
+        </div>
+        <div>
+            <p>
+                .flex-container > div { <br>
+                &nbsp; &nbsp;background-color: lightgray;<br>
+                &nbsp; &nbsp;margin: 10px; <br>
+                &nbsp; &nbsp;padding: 20px; <br>
+                &nbsp; &nbsp;font-size: 30px; <br>
+                }
+            </p>
+        </div>
+    </div>
+    <p>
+        this makes a flex box that looks like this:
+    </p>
+    <div class="flex-container1">
+        <div>
+            <p>isnt this a neat flexbox?</p>
+            <p>but it is alittle boring</p>
+            <p>lets spice it up!</p>
+        </div>
+        <div>
+            <p>by seperating the flex container class in html with a div</p>
+            <p>we can have multiple items in the same container</p>
+            <p>
+                like this: <br>
+                &lt;div&gt; class="flex-container"&gt; <br>
+                &nbsp; &nbsp; &lt;div&gt; <br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &lt;p>item one&lt;/p> <br>
+                &nbsp; &nbsp; &lt;/div&gt; <br>
+                &nbsp; &nbsp; &lt;div&gt; <br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;item two&lt;/p&gt; <br>
+                &nbsp; &nbsp; &lt;/div&gt;
+            </p>
+
+        </div>
+        <div>
+            <p>we can also position the items in diffrent ways</p>
+            <p>we can do this with the flex-direction rule and <br>changing the value to one of the following;</p>
+            <div class="flex-ception1">
+                <p>row</p>
+                <div>
+                    <p class="p1">1
+                    <p>
+                </div>
+                <div>
+                    <p class="p1">2
+                    <p>
+                </div>
+                <div>
+                    <p class="p1">3
+                    <p>
+                </div>
+                <div>
+                    <p class="p1">4
+                    <p>
+                </div>
+            </div>
+            <div class="flex-ception3">
+                <div>
+                    <p class="p1">1
+                    <p>
+                </div>
+                <div>
+                    <p class="p1">2
+                    <p>
+                </div>
+                <div>
+                    <p class="p1">3
+                    <p>
+                </div>
+                <div>
+                    <p class="p1">4
+                    <p>
+                </div>
+                <p>row-reverse</p>
+
+            </div>
+            <div class="flex-ception5">
+                <div class="flex-ception2">
+                    <p>column</p>
+                    <div>
+                        <p class="p1">1
+                        <p>
+                    </div>
+                    <div>
+                        <p class="p1">2
+                        <p>
+                    </div>
+                    <div>
+                        <p class="p1">3
+                        <p>
+                    </div>
+                    <div>
+                        <p class="p1">4
+                        <p>
+                    </div>
+                </div>
+                <div class="flex-ception4">
+                    <div>
+                        <p class="p1">1
+                        <p>
+                    </div>
+                    <div>
+                        <p class="p1">2
+                        <p>
+                    </div>
+                    <div>
+                        <p class="p1">3
+                        <p>
+                    </div>
+                    <div>
+                        <p class="p1">4
+                        <p>
+                    </div>
+                    <p>column-reverse</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>these one of the many things<br> you can to with flex container</p>
+        </div>
+        <div>
+            <p><a href="https://www.w3schools.com/css/css3_flexbox.asp">read here for more</a></p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <p>you can align items by:</p>
+    <div class="flex-container">
+        <div>
+            <p>
+                &nbsp; &nbsp; .flex-container > div { <br>
+                &nbsp; &nbsp; &nbsp; &nbsp; background-color: gray;<br>
+                &nbsp; &nbsp; &nbsp; &nbsp; <b>align-items: center;</b> <br>
+                &nbsp; &nbsp; &nbsp; &nbsp; <b>justify-content: center; </b> <br>
+                &nbsp; &nbsp; } <br> <br>
+            </p>
+        </div>
+    </div>
+    <p>this is what it looks like:</p>
+    <div class="flex-container2">
+        <div>
+            <div class="flex-container2-a">
+                <div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h1>Introduction to pseudo classes:</h1>
+    <p>
+        with pseudo classes you can add logic to your css files! <br>
+        the first thing we can do is use the <b>:hover</b> pseudo-class
+    </p>
+    <div class="flex-container">
+        <div>
+            <!-- when the mouce is hoverd over to the following code -->
+            <p>
+                &nbsp; &nbsp;.flex-container > div:hover { <br>
+                &nbsp; &nbsp; &nbsp; &nbsp;background-color: gray; <br>
+                &nbsp; &nbsp; &nbsp; &nbsp; color: white; <br>
+                &nbsp; &nbsp;}
+            </p>
+        </div>
+    </div>
+    <p>
+        what this does is when your mouse is <b>hovering</b> over the flex container<br>
+        it will run the command in the currly brakets, <br>
+        in this case tuen the color of the box gray and the color of the text white
+        <br>
+        <br>
+        another thing we can do with pseudo classes is create a list where every odd item has a different background
+        color using the :nth-child() pseudo-class.
+    </p>
+    <!-- lets you select a specific numberd child of an object, or select odd/even -->
+    <div class="flex-container3">
+        <div>
+            <p>one</p>
+        </div>
+        <div>
+            <p>two</p>
+        </div>
+        <div>
+            <p>three</p>
+        </div>
+        <div>
+            <p>four</p>
+        </div>
+        <div>
+            <p>five</p>
+        </div>
+        <div>
+            <p>six</p>
+        </div>
+        <div>
+            <p>seven</p>
+        </div>
+        <div>
+            <p>eight</p>
+        </div>
+        <div>
+            <p>nine</p>
+        </div>
+        <div>
+            <p>ten</p>
+        </div>
+    </div>
+    <p>the code for this is rather simple: </p>
+    <div class="flex-container">
+        <div>
+            <p>
+                &nbsp; &nbsp; .flex-container > div:nth-child(odd) { <br>
+                &nbsp; &nbsp; &nbsp; &nbsp; background-color: #9F21DE; <br>
+                &nbsp; &nbsp; &nbsp; &nbsp;color: white; <br>
+                &nbsp; &nbsp; } <br>
+                <br>
+                &nbsp; &nbsp;.flex-container > div:nth-child(even) { <br>
+                &nbsp; &nbsp; &nbsp; &nbsp;background-color: #60DE21; <br>
+                &nbsp; &nbsp; } <br>
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <p>two pseudo-class that can be used is :first-child, and :last-child</p>
+    <p>they're pretty self explanatory, they choose the first and last child and let you modify them</p>
+
+    <div class="flex-container4">
+        <div>
+            <p>One</p>
+        </div>
+        <div>
+            <p>Two</p>
+        </div>
+        <div>
+            <p>Three</p>
+        </div>
+        <div>
+            <p>Four</p>
+        </div>
+        <div>
+            <p>Five</p>
+        </div>
+    </div>
+    <p> the code for that looks like this: </p>
+    <div class="flex-container">
+        <div>
+            <p>
+                &nbsp; &nbsp; .flex-container4 > div:first-child {<br> <!-- selects the first child -->
+                &nbsp; &nbsp;&nbsp; &nbsp; background-color: #9F21DE;<br>
+                &nbsp; &nbsp;&nbsp; &nbsp; color: white; <br>
+                &nbsp; &nbsp;}<br>
+                &nbsp; &nbsp;.flex-container4 > div:las {<br> <!-- selects the last child -->
+                &nbsp; &nbsp;&nbsp; &nbsp; background-color: #60DE21; <br>
+                &nbsp; &nbsp;}
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <p>
+        and lastly the transition pseudo-class, this has a built in hover so when you hover over somthing it uses the
+        transition pseudo-class <br>
+        the transition pseudo-class adds animation, it looks like and is coded like this:
+    </p>
+
+
+
+    <div class="flex-container">
+        <div>
+            <p>
+                &nbsp; &nbsp; .flex-container > div { <br> <!-- morphs into whatever in a editable amount of time -->
+                &nbsp; &nbsp; &nbsp; &nbsp;transition: background-color .2s, color .2s <br>
+                &nbsp; &nbsp; } <br>
+                <br>
+                &nbsp; &nbsp; .flex-container > div:hover { <br>
+                &nbsp; &nbsp; &nbsp; &nbsp; background-color: gray; <br>
+                &nbsp; &nbsp; color: white; <br>
+                &nbsp; &nbsp; } <br>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
